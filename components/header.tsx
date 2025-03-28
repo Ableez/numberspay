@@ -1,6 +1,6 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export function Header() {
   return (
@@ -19,27 +19,46 @@ export function Header() {
           </Link>
         </div>
         <nav className="hidden md:flex items-center gap-8">
-          <Link href="#how-it-works" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="#how-it-works"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
             How It Works
           </Link>
-          <Link href="#features" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="#features"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
             Features
           </Link>
-          <Link href="#security" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="#security"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
             Security
           </Link>
-          <Link href="#faq" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="#faq"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
             FAQ
           </Link>
-          <Link href="#contact" className="text-sm text-gray-300 hover:text-white transition-colors">
+          <Link
+            href="#contact"
+            className="text-sm text-gray-300 hover:text-white transition-colors"
+          >
             Contact
           </Link>
         </nav>
-        <Button variant="secondary" className="bg-white text-black hover:bg-gray-100">
-          Download App
-        </Button>
+        <a href={"https://forms.gle/JZYcJkJH43ZuTpqk6"} target={"_blank"}>
+          <Button
+            variant="secondary"
+            className="bg-white text-black hover:bg-gray-100"
+          >
+            Download App
+          </Button>
+        </a>
       </div>
     </header>
-  )
+  );
 }
-
